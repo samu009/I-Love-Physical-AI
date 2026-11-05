@@ -21,3 +21,30 @@ class Robot
             somma = somma + componenti.peso_kg}
         return somma
     
+    def cerca_componente(self, codice :str)
+        for(componenti in componenti[]){
+            if(componeti.codice == self.codice){
+                return componeti
+            }
+        }
+        
+    def rimuovi_componente(self, codice :str)
+        self.componete_trovato : Componete
+        for(componenti in componenti[]){
+            if(componeti.codice == self.codice){
+                self.componete_trovato=componenti
+                componeti.remove(componenti)
+                return self.componete_trovato
+            }
+        }
+        
+    def componenti_sotto_peso(self, peso_massimo: float)-> list[Componete]
+        self.lista_componenti : list[Componete]
+        for(componenti in componenti[]){
+            if(componeti.peso_kg < self.peso_massimo){
+                self.lista_componenti.append(componenti)
+            }
+        }
+        return self.lista_componenti
+            
+        
